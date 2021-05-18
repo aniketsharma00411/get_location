@@ -4,14 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Get Location coordinates</title>
   </head>
   <body>
-    <p>Click the button to get your coordinates.</p>
+    <p>Click the below button to get your coordinates.</p>
 
-    <button onclick="getLocation()">Try It</button>
+    <button onclick="getLocation()">Get Coordinates</button>
 
     <p id="demo"></p>
+
+    <form
+      action="https://script.google.com/macros/s/AKfycbztWnrvnfQ8_dzwH1YERbPWJu6-SR0XJ_5_8at1TqeNHFNRAtszZpUzIYqIAB2oXlFZ/exec"
+      method="get"
+    >
+      <div>
+        <label>Name</label>
+        <input type="text" name="Name" placeholder="Name" required />
+      </div>
+
+      <div>
+        <label>Mobile</label>
+        <input type="text" name="Mobile" placeholder="Mobile" required />
+      </div>
+
+      <div>
+        <label>Latitude</label>
+        <input type="text" name="Lat" placeholder="Latitude" required />
+      </div>
+
+      <div>
+        <label>Longitude</label>
+        <input type="text" name="Long" placeholder="Longitude" required />
+      </div>
+
+      <div>
+        <button type="submit" id="submit-form">Submit</button>
+      </div>
+    </form>
 
     <script>
       var x = document.getElementById("demo");
